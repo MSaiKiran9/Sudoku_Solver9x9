@@ -33,7 +33,7 @@ export default function App() {
   console.log(second)
   const element = second.map((item, index) => <input type="number" max="9" min="0" onChange={(e) => Change(e, index)} key={index} value={item} />)
   return (<>
-    <div id='heading'><h1>Sudoku Solver</h1></div>
+    <div id='heading'><h1>Sudoku Solver </h1></div>
     <div className='rand'>{element}</div>
     <div id='loading'>{loading === true ? <Canvas><ambientLight intensity={0.4} /><directionalLight intensity={0.5} position={[0, -10, 0]} /><Stuff load="true" /></Canvas> : <Canvas><ambientLight intensity={0.4} /><directionalLight intensity={0.5} position={[2, -10, 0]} /><Stuff load="false" /></Canvas>}</div>
     <div id='bu'>

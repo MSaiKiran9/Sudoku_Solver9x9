@@ -2,7 +2,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useRef, useState } from "react";
 import {
     MeshWobbleMaterial,
-    Stars
+    Stars, Sparkles
 } from "@react-three/drei";
 export default function Stuff(props) {
     const useref = useRef(null)
